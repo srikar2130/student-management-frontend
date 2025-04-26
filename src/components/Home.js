@@ -8,7 +8,10 @@ const Home = () => {
     <div style={styles.container}>
       <h1 style={styles.heading}>Student Management System</h1>
       <div style={styles.buttonContainer}>
-        <button style={styles.button} onClick={() => navigate('/add-student')}>Add Student</button>
+        {/* 🛑 Changed /add-student to /add */}
+        <button style={styles.button} onClick={() => navigate('/add')}>Add Student</button>
+
+
         <button style={styles.button} onClick={() => navigate('/students')}>Show Students</button>
       </div>
     </div>
