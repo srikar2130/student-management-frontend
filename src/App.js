@@ -1,14 +1,14 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import StudentList from './components/StudentList';
 import AddStudent from './components/AddStudent';
 import EditStudent from './components/EditStudent';
-import './style.css';
+import Navbar from './components/Navbar'; // Import Navbar
 
 function App() {
   return (
     <Router>
+      <Navbar /> {/* Always visible */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/students" element={<StudentList />} />

@@ -36,3 +36,244 @@
     transform: rotate(360deg);
   }
 }
+/* General Page Style */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Style */
+.navbar {
+  background-color: #343a40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: #495057;
+}
+
+/* Home Page Style */
+.home-container {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.home-title {
+  font-size: 40px;
+  color: #343a40;
+  margin-bottom: 50px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.home-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-buttons button:hover {
+  background-color: #45a049;
+}
+/* Table Container */
+.table-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Table Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+/* Table Header */
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Table Body */
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:hover {
+  background-color: #e9f5f2;
+}
+
+/* Table Cells */
+td {
+  padding: 12px 15px;
+}
+
+/* Action Buttons inside Table */
+.table-btn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.table-btn.edit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table-btn.edit:hover {
+  background-color: #45a049;
+}
+
+.table-btn.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.table-btn.delete:hover {
+  background-color: #d32f2f;
+}
+.table-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.add-student-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-student-btn:hover {
+  background-color: #125ea7;
+}
+.container {
+  max-width: 95%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1976d2;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+

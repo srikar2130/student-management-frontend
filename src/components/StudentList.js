@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './StudentList.css';
 
 const StudentList = () => {
   const [students, setStudents] = useState([]);
@@ -18,10 +19,14 @@ const StudentList = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Student List</h2>
-      <Link to="/add">Add New Student</Link>
-      <table>
+    <div className="table-container">
+      <h2 className="table-heading">Student List</h2>
+      <div style={{ marginBottom: '20px' }}>
+        <Link to="/add">
+          <button className="add-student-btn">➕ Add New Student</button>
+        </Link>
+      </div>
+      <table className="student-table">
         <thead>
           <tr>
             <th>Student ID</th>
@@ -47,14 +52,18 @@ const StudentList = () => {
               <td>{s.enrollmentYear}</td>
               <td>{s.isActive ? 'Yes' : 'No'}</td>
               <td>
-  <div className="button-group">
-    <Link to={`/edit/${s._id}`}>
-      <button className="action-btn edit-btn">Edit</button>
-    </Link>
-    <button className="action-btn delete-btn" onClick={() => deleteStudent(s._id)}>Delete</button>
-  </div>
-</td>
-
+                <div className="action-buttons">
+                  <Link to={`/edit/${s._id}`}>
+                    <button className="edit-button">Edit</button>
+                  </Link>
+                  <button
+                    className="delete-button"
+                    onClick={() => deleteStudent(s._id)}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </td>
             </tr>
           ))}
         </tbody>
