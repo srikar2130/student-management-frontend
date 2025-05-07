@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Navbar /> {/* Always visible */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/students" element={<StudentList />} />
         <Route path="/add" element={<AddStudent />} />
         <Route path="/edit/:id" element={<EditStudent />} />
